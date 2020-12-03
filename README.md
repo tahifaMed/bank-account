@@ -9,6 +9,7 @@ Think of your personal bank account experience When in doubt, go for the simples
 - Statement printing
  
 ## User Stories
+
 ##### US 1
 In order to save money  
 As a bank client  
@@ -27,6 +28,6 @@ I want to see the history (operation, date, amount, balance)  of my operations
 # Choice of implementation
 
 to store all transactions made to an account, I create an immutable list of BankAccountEvent, the immutability is for the integrity of the data. the different type of 
-events made hierarchical to keep open closed principles.
+events are hierarchical to verify open closed principles and keep it open for extension.
 
-to run the test , you need to run mvn clean test
+to run the solution, you need to run mvn clean install and mvn test
